@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+<script src="https://cdn.mojoauth.com/js/mojoauth.min.js">
+</script>
+</head>
+<body>
+  
+  <div id="mojoauth-passwordless-form"></div>
+  <script>
+  const mojoauth = new MojoAuth("75221fb9-e65d-4ac3-a981-5b9c096e3daf", {language:"en", redirect_url:"https://coderable.studio"});
+  // Use signInWithEmailOTP() for authentication using Email OTP
+mojoauth.signInWithMagicLink().then(response => console.log(response));
+</script>
+
+</body>
+</html>
